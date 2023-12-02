@@ -1,0 +1,78 @@
+.parent {
+    background-color: aqua;
+}
+
+
+@media screen and (max-width:1760px) {
+
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .parent {
+        background-color: orange;
+        display: block;
+        width: 40vw;
+        margin-top: 20px;
+    }
+
+    .image {
+
+        background-image: url('https://www.lego.com/cdn/cs/set/assets/bltaca1f44d84218343/21344-202311-PDP-Sidekick-Standard.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1');
+        background-size: cover;
+        height: 100vh;
+        width: 40vw;
+    }
+}
+
+
+
+@media screen and (max-width:880px) {
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .parent {
+        background-color: beige ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+    }
+    .image{
+        background-image: url('https://www.lego.com/cdn/cs/set/assets/bltd9baebc09f0d51a7/40603-GWP-202312-PDP-Promo-Badge.png?fit=bounds&format=png&width=120&height=60&dpr=1.5');
+        height: 30vh;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent {
+        background-color: grey;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 70vh;
+    }
+    .image{
+        
+        background-image: url('https://www.lego.com/cdn/cs/set/assets/blt1a18d0fa5e6c09b6/21344_alt3.png?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5');
+        background-size: cover;
+        height: 50vh;
+        width: 50vh;
+    }
+}
